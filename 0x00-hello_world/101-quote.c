@@ -2,8 +2,8 @@
 #include <unistd.h>
 
 /**
- * main - C program that prints 
- * Return: one if successful
+ *main - C program that prints 
+ *Return: one if successful
  */
 int main(void)
 {
