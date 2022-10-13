@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/**print phrase with puts function**/
+/**main- prints the phrase using puts function.
+ * returns: zero if done properly and otherwise return non-zero
+*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
