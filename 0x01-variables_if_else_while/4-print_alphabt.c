@@ -8,8 +8,9 @@ int main(void)
 {
 	char n = 'a';
 
-	while (((n <= 'z') && (n != 'q') && (n != 'e')); n++)
+	while ((n <= 'z') && (n != 'q') && (n != 'e'))
 		putchar(n);
 	putchar('\n');
+	n++;
 	return (0);
 }
