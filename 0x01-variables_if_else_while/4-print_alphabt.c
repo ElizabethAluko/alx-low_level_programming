@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	char n;
+	char n = 'a';
 
-	for (n = 'a'; n <= 'z'; n != 'q'; n != 'e';  n++)
+	while (((n <= 'z') && (n != 'q') && (n != 'e')); n++)
 		putchar(n);
 	putchar('\n');
 	return (0);
