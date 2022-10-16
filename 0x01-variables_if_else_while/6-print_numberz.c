@@ -2,7 +2,7 @@
 
 /**
  * main - print all single digit numbers from 0 to 9 using putchar.
- * Return - 0 if successful.
+ * Return: 0 if successful.
  */
 int main(void)
 {
