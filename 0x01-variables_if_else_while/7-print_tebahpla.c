@@ -9,7 +9,7 @@ int main(void)
 	char n;
 
 	for (n = 'z'; n >= 'a'; n--)
-		printf("%c", n);
-	printf("\n");
+		putchar("%c", n);
+	putchar("\n");
 	return (0);
 }
