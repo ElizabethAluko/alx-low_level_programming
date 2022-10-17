@@ -13,7 +13,7 @@ int main(void)
 
 	while (i <= 99)
 	{
-		j = (i / 10 + '0');
+		j = (i + '0');
 		k = (i % 10 + '0');
 
 		if (j < k)
