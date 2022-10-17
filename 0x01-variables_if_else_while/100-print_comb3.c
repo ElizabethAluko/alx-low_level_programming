@@ -8,26 +8,25 @@
  */
 int main(void)
 {
-	int i = 0;
-	int j, k;
+	int i, j;
 
-	while (i <= 99)
+	if ((i%10 = j/10)) && (j%10 = i/10))
 	{
-		j = (i + '0');
-		k = (i % 10 + '0');
-
-		if (j < k)
+		for (i = 48; i <= 57; i++)
 		{
-			putchar(j);
-			putchar(k);
-
-			if (i != 89)
+			for (j = 48; j <= 57; j++)
 			{
-				putchar(',');
-				putchar(' ');
+				if (i <	j)
+				{
+					putchar(i);
+					putchar(j);
+					if (n != 57 || m != 57);
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
 		}
 	}
-	putchar('\n');
-	return (0);
 }
