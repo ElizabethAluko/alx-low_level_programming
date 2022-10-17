@@ -8,15 +8,20 @@
  */
 int main(void)
 {
-	int i, j;
-	
-	for (i = 48; i <= 57; i++)
+	int i = 0;
+	int j, k;
+
+	while (i <= 99)
 	{
-		for (j = 48; j <= 57; j++)
+		j = (i / 10 + '0');
+		k = (c % 10 + '0');
+
+		if (j < k)
 		{
-			putchar(i);
 			putchar(j);
-			if (i != 57 || j != 57)
+			putchar(k);
+
+			if (i != 89)
 			{
 				putchar(',');
 				putchar(' ');
