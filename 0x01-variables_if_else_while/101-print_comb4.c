@@ -21,7 +21,8 @@ int main(void)
 					putchar(j);
 					putchar(k);
 					if (i != 48 || j != 58)
-					{putchar(',');
+					{
+						putchar(',');
 						putchar(' ');
 					}
 				}
