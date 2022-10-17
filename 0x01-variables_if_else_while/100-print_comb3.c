@@ -10,23 +10,22 @@ int main(void)
 {
 	int i, j;
 
-	if ((i%10 = j/10)) && (j%10 = i/10))
+	for (i = 48; i <= 56; i++)
 	{
-		for (i = 48; i <= 57; i++)
+		for (j = 49; j <= 57; j++)
 		{
-			for (j = 48; j <= 57; j++)
+			if (i < j)
 			{
-				if (i <	j)
+				putchar(j);
+				putchar(i);
+				if (i != 56 || j != 57)
 				{
-					putchar(i);
-					putchar(j);
-					if (n != 57 || m != 57);
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
+	putchar('\n');
+	return (0);
 }
