@@ -4,7 +4,7 @@
  * add - function that add two integers and return result.
  * Return: result if successful
  */
-int add(int i, int j)
+int add(i, j)
 {
 	int i, j, k;
 
