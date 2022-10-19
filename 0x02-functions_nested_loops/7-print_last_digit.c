@@ -13,9 +13,6 @@ int print_last_digit(int n)
 	{
 		return (i);
 	}
-	else if (n < 0)
-	{
-		return (-i);
-	}
+	return (-i);
 }
 
