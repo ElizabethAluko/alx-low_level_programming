@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _isdigit - function that checks for a digit 0 to 9
