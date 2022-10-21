@@ -20,18 +20,17 @@ void print_diagonal(int n)
 			if (i == 1)
 			{
 				_putchar('\\');
-				_putchar('\n');
 			}
 			else
 			{
-				for(j = 1; j < i; j++);
+				for(j = 1; j < i; j++)
 				{
 					_putchar(' ');
 				}
 				_putchar('\\');
-				_putchar('\n');
 			}
 			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 }
