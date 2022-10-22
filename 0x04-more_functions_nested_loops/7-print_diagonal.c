@@ -3,7 +3,7 @@
 /**
  * print_diagonal - function that draws
  * a diagonal line
- * @n: number of times the character \ is printed
+ * @n: number of times the character is printed
  */
 void print_diagonal(int n)
 {
@@ -13,8 +13,7 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		int i;
-		int j;
+		int i, j;
 
 		for (i = 1; i <= n; i++)
 		{
@@ -32,5 +31,6 @@ void print_diagonal(int n)
 			}
 			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 }
