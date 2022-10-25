@@ -24,7 +24,7 @@ void puts2(char *str)
 		}
 		else
 		{
-			break;
+			continue;
 		}
 	}
 
