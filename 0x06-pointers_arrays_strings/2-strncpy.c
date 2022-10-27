@@ -5,6 +5,7 @@
  * @dest: string that accept another string
  * @src: string to copy
  * @n: number of bytes to copy.
+ * Return: a pointer to the destination string dest.
  */
 char *_strncpy(char *dest, char *src, int n)
 {
