@@ -8,6 +8,7 @@
 char *rot13(char *s)
 {
 	int i, j;
+
 	char alpha[52] = {'A', 'B', 'C', 'D',
 		'E', 'F', 'G', 'H', 'I', 'J',
 		'K', 'L', 'M', 'N', 'O', 'P',
@@ -27,7 +28,7 @@ char *rot13(char *s)
 		'c', 'd', 'e', 'f', 'g', 'h',
 		'i', 'j', 'k', 'l', 'm'};
 
-	for (i = 0, s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; j < 52; j++)
 		{
