@@ -8,21 +8,15 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i = 0;
-	int j = 0;
-	int k = size - 1;
+	int i, j, k;
 
 	long s1 = 0;
 	long s2 = 0;
 
-	while ((i < 20) && (j < size) && (k > -1))
+	for (i = 0, j = 0, k = size - 1; (i < 20) && (j < size) && (k > -1); i++, j++, k--)
 	{
 		s1 += *(a + size * i + j);
 		s2 += *(a + size * i + k);
-
-		i++;
-		j++;
-		k--;
 	}
 	printf("%ld, %ld\n", s1, s2);
 }
