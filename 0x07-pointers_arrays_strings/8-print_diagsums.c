@@ -20,7 +20,9 @@ void print_diagsums(int *a, int size)
 		s1 += *(a + size * i + j);
 		s2 += *(a + size * i + k);
 
-		i++, j++, k--;
+		i++;
+		j++;
+		k--;
 	}
 	printf("%ld, %ld\n", s1, s2);
 }
