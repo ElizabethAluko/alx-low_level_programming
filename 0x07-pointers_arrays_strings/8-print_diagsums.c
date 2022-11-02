@@ -17,7 +17,7 @@ void print_diagsums(int *a, int size)
 	{
 		sum1 += a[i];
 
-		for (j = size - 1; j >= 0; j++)
+		for (j = size - 1; j >= 0; j--)
 		{
 			sum2 += a[j];
 		}
