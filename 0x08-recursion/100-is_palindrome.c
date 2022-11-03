@@ -25,6 +25,7 @@ int check_palindrome(char *s, int len, int i)
 	if (s[i] == s[len - i - 1])
 		return (check_palindrome(s, len, i + 1));
 	return (0);
+}
 
 int is_palindrome(char *s)
 {
