@@ -25,7 +25,7 @@ void _print_rev_recursion(char *s)
 {
 	int i = 0;
 	char tmp;
-	len = get_len(*s);
+	int len = get_len(*s);
 
 	if (s[i] == s[len / 2])
 		return (rstr);
