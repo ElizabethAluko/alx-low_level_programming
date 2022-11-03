@@ -10,8 +10,6 @@ int get_len(char *s);
  */
 int get_len(char *s)
 {
-	int len = 0;
-
 	if (*s == '\0')
 		return (0);
 	else
