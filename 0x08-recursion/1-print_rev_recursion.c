@@ -33,6 +33,7 @@ void _print_rev_recursion(char *s)
 		s[i] = s[len - i - 1];
 		s[len - i - 1] = tmp;
 		i--;
+
 		_print_rev_recursion(*s);
 	}
 	return (*s);
