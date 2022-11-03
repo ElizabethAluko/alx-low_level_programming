@@ -13,7 +13,7 @@ int get_len(char *s)
 	if (*s == '\0')
 		return (0);
 	else
-		return (1 + get_len(s + 1));
+		return ((1 + get_len(s + 1)));
 }
 
 
@@ -25,7 +25,7 @@ void _print_rev_recursion(char *s)
 {
 	int i = 0;
 	char tmp;
-	int len = get_len(*s);
+	char len = get_len(*s);
 
 	if (s[i] == s[len / 2])
 	{
