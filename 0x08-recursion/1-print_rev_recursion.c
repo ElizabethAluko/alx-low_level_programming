@@ -29,9 +29,9 @@ void _print_rev_recursion(char *s)
 
 	if (s[i] == s[len / 2])
 	{
-		tmp = *s[i];
-		*s[i] = *s[len - i - 1];
-		*s[len - i - 1] = tmp;
+		tmp = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = tmp;
 		i--;
 		_print_rev_recursion(*s);
 	}
