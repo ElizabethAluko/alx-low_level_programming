@@ -1,7 +1,23 @@
 #include "main.h"
 
-int sqrt(double num, int r);
+int sqrt(int num, int r);
 int _sqrt_recursion(int n);
+
+/**
+ * sqrt - finds the square root of a number.
+ * @num: the number.
+ * @r: root of the number.
+ * Return: the number and its roots.
+ */
+int sqrt(int num, int r)
+{
+	if ((r * r) == num)
+		return (r);
+	if (r == num / 2)
+		return (-1);
+	return (sqrt(num, r + 1));
+}
+
 
 /**
  * _sqrt_recursion - returns the natural square root of a number.
