@@ -11,11 +11,14 @@ int _sqrt_recursion(int n);
  */
 int sqrt(int num, int r)
 {
-	if ((r * r) == num)
-		return (r);
-	if (r == num / 2)
-		return (-1);
-	return (sqrt(num, r + 1));
+	if (r % (num / r) == 0)
+	{
+		if (r * (num / r) == n)
+			return (r);
+		else
+			return (-1);
+	}
+	return (0 + sqrt(num, r + 1));
 }
 
 
@@ -34,20 +37,4 @@ int _sqrt_recursion(int n)
 		return (1);
 
 	return (sqrt(num, r));
-}
-
-/**
- * sqrt - finds the square root of a number.
- * @num: the number.
- * @r: root of the number.
- * Return: the number and its roots.
- */
-
-int sqrt(int num, int r)
-{
-	if ((r * r) == num)
-		return (r);
-	if (r == num / 2)
-		return (-1);
-	return (sqrt(num, r + 1));
 }
