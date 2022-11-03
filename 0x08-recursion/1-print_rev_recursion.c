@@ -25,16 +25,15 @@ void _print_rev_recursion(char *s)
 {
 	int i = 0;
 	char tmp;
-	int len = get_len(*s);
+	int len = get_len(s);
 
 	if (s[i] == s[len / 2])
-		return (rstr);
-	tmp = s[i];
-	s[i] = s[len - i - 1];
-	s[len - i - 1] = tmp;
-	i--;
-
-	_print_rev_recursion(*s);
-	
+	{
+		tmp = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = tmp;
+		i--;
+		_print_rev_recursion(*s);
+	}
 	return (s);
-
+}
