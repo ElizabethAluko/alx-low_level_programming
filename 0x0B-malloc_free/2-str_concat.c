@@ -30,16 +30,6 @@ char *str_concat(char *s1, char *s2)
 	nwstr = malloc(sizeof(char) * (i + j) + 1);
 	if (nwstr == 0)
 		return (0);
-
-	if (s1 == NULL)
-	{
-		return (s2);
-	}
-
-	if (s2 == NULL)
-	{
-		return (s1);
-	}
 	while (k < i)
 	{
 		nwstr[k] = s1[k];
