@@ -13,7 +13,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *nwstr;
-	int i, size, arg;
+	int i, size, arg, narg = ac;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -21,7 +21,7 @@ char *argstostr(int ac, char **av)
 	for (arg = 0; arg < ac; arg++)
 	{
 		for (size = 0; av[arg][size]; size++)
-			ac++;
+			narg++;
 	}
 
 	nwstr = malloc(sizeof(char) * ac + 1);
@@ -38,7 +38,7 @@ char *argstostr(int ac, char **av)
 		nwstr[i++] = '\n';
 	}
 
-	nwstr[ac] = '\0';
+	nwstr[narg] = '\0';
 
 	return (nwstr);
 }
