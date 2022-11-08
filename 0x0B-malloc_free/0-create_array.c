@@ -12,10 +12,17 @@
 void *malloc(size_t size);
 char *create_array(unsigned int size, char c)
 {
+	int i = 0;
 	char *s;
 	s = malloc(sizeof(char) * size);
-	s[0] = c;
 
+	if (size == 0)
+		return();
+	while ( i < size)
+	{
+		s[i] = c;
+		i++;
+	}
 	free(s);
 	return (s);
 }
