@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 	unsigned int k = 0;
 	unsigned int l = 0;
 
-	if (s1[i] == '\0' || s2[j] == '\0')
+	if (s1[i] == '\0' && s2[j] == '\0')
 		return (0);
 
 	while (s1[i] != '\0')
@@ -26,11 +26,16 @@ char *str_concat(char *s1, char *s2)
 
 	nwstr = malloc(sizeof(char) * (i + j) + 1);
 
+	if (s1[0] == '\0')
+		i = 0;
+
 	while (k < i)
 	{
 		nwstr[k] = s1[k];
 		k++;
 	}
+	if (s2[0] == '\0')
+		j = 0;
 	while (k < (i + j))
 	{
 		nwstr[k] = s2[l];
