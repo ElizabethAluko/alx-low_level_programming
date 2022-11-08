@@ -16,13 +16,13 @@ char *str_concat(char *s1, char *s2)
 	unsigned int k = 0;
 	unsigned int l = 0;
 
-	if (s1[i] == '\0')
+	if (s1[i] == '\0' || s1[i] == NULL)
 		i = 0;
 
 	while (s1[i] != '\0')
 		i++;
 
-	if (s2[j] == '\0')
+	if (s2[j] == '\0' || s2[j] == NULL)
 		j = 0;
 	while (s2[j] != '\0')
 		j++;
