@@ -35,8 +35,7 @@ char *str_concat(char *s1, char *s2)
 		nwstr[k] = s1[k];
 		k++;
 	}
-	if (s2[0] == '\0')
-		j = 0;
+
 	while (k < (i + j))
 	{
 		nwstr[k] = s2[l];
