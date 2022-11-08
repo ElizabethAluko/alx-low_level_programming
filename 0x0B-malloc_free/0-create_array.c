@@ -14,7 +14,6 @@ char *create_array(unsigned int size, char c)
 {
 	char *s;
 	s = malloc(sizeof(char) * size);
-	s[size];
 	s[0] = 'c';
 
 	free(s);
