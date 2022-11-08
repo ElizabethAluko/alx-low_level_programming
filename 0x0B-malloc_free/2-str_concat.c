@@ -13,8 +13,10 @@ char *str_concat(char *s1, char *s2)
 	char *nwstr;
 	int i = 0;
 	int j = 0;
+	int k = 0;
+	int l = 0;
 
-	if (s1 == '\0' && s2 == '\0')
+	if (s1[i] == '\0' && s2[j] == '\0')
 		return (0);
 
 	while (s1[i] != '\0')
