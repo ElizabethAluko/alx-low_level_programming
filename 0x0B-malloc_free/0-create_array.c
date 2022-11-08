@@ -17,4 +17,5 @@ char *create_array(unsigned int size, char c)
 	s[0] = c;
 
 	free(s);
+	return (s);
 }
