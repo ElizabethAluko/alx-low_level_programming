@@ -16,26 +16,16 @@ char *str_concat(char *s1, char *s2)
 	unsigned int k = 0;
 	unsigned int l = 0;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
-
 	if (s1[i] == '\0')
-	{
 		i = 0;
-	}
-	else
-	{
-		while (s1[i] != '\0')
-			i++;
-	}
+
+	while (s1[i] != '\0')
+		i++;
 
 	if (s2[j] == '\0')
 		j = 0;
-	else
-	{
-		while (s2[j] != '\0')
+	while (s2[j] != '\0')
 		j++;
-	}
 
 	nwstr = malloc(sizeof(char) * (i + j) + 1);
 	if (nwstr == 0)
