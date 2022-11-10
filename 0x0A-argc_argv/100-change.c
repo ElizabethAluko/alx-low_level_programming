@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	while (cents > 0)
 	{
-		money+×;
+		money++;
 		if ((cents -25) >= 0)
 		{
 			cents -= 25;
