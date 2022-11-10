@@ -47,8 +47,9 @@ int main(int argc, char *argv[])
  */
 int is_num(char *str)
 {
-	unsigned int i = 0;
+	unsigned int i;
 
+	i = 0;
 	while (i < strlen(str))
 	{
 		if (isdigit(str[i]) == 0)
