@@ -9,7 +9,7 @@
  * the program should print Error,
  * followed by a new line, and return 1
  */
-int __attribute__((unused)) main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int n1, n2, prd;
 
