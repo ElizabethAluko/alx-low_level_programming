@@ -15,6 +15,9 @@ int main(int argc, char *argv[])
 {
 	int i, num, sum = 0;
 
+	if (argc == 1)
+		return (0\n);
+
 	for (num = 1; num < argc; num++)
 	{
 		for (i = 0; argv[num][i]; i++)
