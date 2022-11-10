@@ -51,7 +51,7 @@ int is_num(char *str)
 
 	while (i < strlen(str))
 	{
-		if (isdigit(str[i] == 0))
+		if (isdigit(str[i]) == 0)
 		{
 			return (0);
 		}
