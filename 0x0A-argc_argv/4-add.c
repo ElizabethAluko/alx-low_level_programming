@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
 
-int is_num(char *str);
 
 /**
  * main - adds two numbers and print the result
@@ -18,50 +15,21 @@ int main(int argc, char *argv[])
 {
 	int i, num, sum = 0;
 
-	if (argc == 1)
-		{
-			putchar('0');
-			putchar('\n');
-		}
-	for (i = 1; i < argc; i++)
+	for (num = 1; num < argc; num++)
 	{
-		if (is_num(argv[i]))
+		for (i = 0; argv[num][i]; i++)
 		{
-			num = atoi(argv[i]);
-
-			if (num > 0)
+			if (argv[num][i] < '0' || argv[num][i] > '9')
 			{
-				sum += num;
+				printf("Erroe\n");
+				return (1);
 			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+
+		sum += atoi(argv[num]);
 	}
+
 	printf("%d\n", sum);
 
 	return (0);
-}
-
-/**
- * is_num - check whether the given arg is an interger.
- * @str: the arg to check.
- * Return: 0 or 1
- */
-int is_num(char *str)
-{
-	unsigned int i;
-
-	i = 0;
-	while (i < strlen(str))
-	{
-		if (isdigit(str[i] == 0))
-		{
-			return (0);
-		}
-		i++;
-	}
-	return (1);
 }
