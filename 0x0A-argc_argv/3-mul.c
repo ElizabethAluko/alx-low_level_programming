@@ -23,6 +23,6 @@ int __attribute__((unused)) main(int argc, char *argv[])
 	n2 = atoi(argv[2]);
 	prd = n1 * n2;
 
-	printf("%d * %d = %d\n", n1 n2 prd);
+	printf("%d\n", prd);
 	return (0);
 }
