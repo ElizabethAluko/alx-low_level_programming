@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 			putchar('0');
 			putchar('\n');
 		}
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		if (is_num(argv[i]))
 		{
