@@ -18,11 +18,13 @@ int __attribute__((unused)) main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
-	n1 = atoi(rgv[1]);
-	n2 = atoi(argv[2]);
-	prd = n1 * n2;
-
-	printf("%d\n", prd);
+	else
+	{
+		n1 = atoi(rgv[1]);
+		n2 = atoi(argv[2]);
+		prd = n1 * n2;
+		
+		printf("%d\n", prd);
+	}
 	return (0);
 }
