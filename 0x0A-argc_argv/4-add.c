@@ -18,6 +18,11 @@ int main(int argc, char *argv[])
 {
 	int i, num, sum = 0;
 
+	if (argc == 1)
+		{
+			putchar('0');
+			putchar('\n');
+		}
 	for (i = 0; i < argc; i++)
 	{
 		if (is_num(argv[i]))
