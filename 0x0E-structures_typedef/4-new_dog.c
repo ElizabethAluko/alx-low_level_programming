@@ -8,6 +8,7 @@
  * @name: Dog's name.
  * @age: Dog's age
  * @owner: Dog's owner
+ * Return: p_dog if successful
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
