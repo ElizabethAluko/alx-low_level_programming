@@ -12,13 +12,15 @@ void print_all(const char * const format, ...)
 	va_list p;
 
 	va_start(p, format);
+
 	i = 0;
-	while (format && format[i] && k)
+
+	while (format && format[i])
 	{
 		j = 0;
 		while (ar[j])
 		{
-			if (format[i] == ar[j])
+			if (format[i] == ar[j] && k)
 			{
 				printf(", ");
 				break;
