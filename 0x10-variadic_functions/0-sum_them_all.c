@@ -3,7 +3,7 @@
 
 /**
  * sum_them_all - sum of all its parameters.
- * @n: reference argument.
+ * @n: number of argument.
  * Return: returns the sum of all the integers.
  */
 int sum_them_all(const unsigned int n, ...)
@@ -16,7 +16,7 @@ int sum_them_all(const unsigned int n, ...)
 	if (n == 0)
 		return (0);
 
-	for (i = n; i >= 0; i++)
+	for (i = 0; i < n; i++)
 		sum += va_arg(a, int);
 	va_end(a);
 	return (sum);
