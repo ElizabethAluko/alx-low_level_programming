@@ -6,14 +6,14 @@
  */
 void print_all(const char * const format, ...)
 {
-	unsigned int i, j;
+	unsigned int i, j, k = 0;
 	char *str;
 	char ar[] = "cifs";
 	va_list p;
 
 	va_start(p, format);
 	i = 0;
-	while (format && format[i])
+	while (format && format[i] && k)
 	{
 		j = 0;
 		while (ar[j])
@@ -27,16 +27,16 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(p, int));
+				printf("%c", va_arg(p, int)), k = 1;
 				break;
 			case 'i':
-				printf("%d", va_arg(p, int));
+				printf("%d", va_arg(p, int)), k = 1;
 				break;
 			case 'f':
-				printf("%f", va_arg(p, int));
+				printf("%f", va_arg(p, int)), k = 1;
 				break;
 			case 's':
-				str = va_arg(p, char *);
+				str = va_arg(p, char *), k = 1;
 				if (!str)
 				{
 					printf("(nil)");
