@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 
 	va_start(p, format);
 	i = 0;
-	while (format && format)
+	while (format && format[i])
 	{
 		j = 0;
 		while (ar[j])
