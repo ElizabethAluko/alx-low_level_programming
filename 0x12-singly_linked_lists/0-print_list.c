@@ -9,8 +9,6 @@ size_t print_list(const list_t *h)
 {
 	unsigned int i = 0;
 
-	if (str == NULL)
-		printf("[0] (nil)\n");
 	while (h != NULL)
 	{
 		if (h-> == NULL)
