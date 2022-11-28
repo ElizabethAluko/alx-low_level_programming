@@ -8,10 +8,10 @@
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *prt = malloc(sizeof(listint_t));
+	listint_t *ptr = malloc(sizeof(listint_t));
 	listint_t *hold = *head;
 
-	if (prt == NULL)
+	if (ptr == NULL)
 		return (NULL);
 
 	ptr->n = n;
