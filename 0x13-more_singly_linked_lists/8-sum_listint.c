@@ -18,13 +18,6 @@ int sum_listint(listint_t *head)
 		ptr = head;
 		sum += ptr->n
 		head = head->next;
-		if (head->link == NULL)
-		{
-			return (sum);
-			break;
-		}
-		else
-			continue;
 	}
 	return (sum);
 }
