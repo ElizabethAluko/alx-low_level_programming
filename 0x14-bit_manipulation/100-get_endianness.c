@@ -8,7 +8,7 @@
 int get_endianness(void)
 {
 	int num = 1;
-	char *is_endian = &num;
+	char *is_endian = (char *)&num;
 
 	if (*is_endian == 1)
 		return (1);
