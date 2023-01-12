@@ -11,10 +11,4 @@ size_t print_dlistint(const dlistint_t *h)
 
 	if(h == NULL)
 		printf("List is empty")
-	while(ptr->next != NULL)
-	{
-		printf("%u\n", ptr->n);
-		count++;
-		ptr = ptr->next;
-	}
-	printf("--> %d elements");
+	
