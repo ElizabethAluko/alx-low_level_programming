@@ -6,7 +6,7 @@
  * 1 t0 100, Fizz for multiple of three,
  * Buzz for multiple of five
  * and FizzBuzz for multiples of both 5 and 3.
- * Return: 0 if successful
+ * Return: 0 if successful.
  */
 int main(void)
 {
@@ -32,7 +32,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", i);
+			printf(" %d", i);
 		}
 	}
 	printf("\n");
