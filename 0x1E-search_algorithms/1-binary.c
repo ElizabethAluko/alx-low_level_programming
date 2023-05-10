@@ -1,8 +1,8 @@
 #include "search_algos.h"
 
 
-/*
- * binary_search - searches for a value in an array 
+/**
+ * binary_search - searches for a value in an array
  * using binary search.
  * @array: Array of integers to search
  * @size: number of elements in the array.
@@ -36,7 +36,7 @@ int binary_search(int *array, size_t size, int value)
 		}
 		if (array[m] < value)
 		{
-			u = m +1;
+			u = m + 1;
 		}
 		else
 		{
